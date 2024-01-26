@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://brpbliecljjv2"]
+
+[ext_resource type="Texture2D" uid="uid://ckiq2x2fv3nnv" path="res://FloorsAndWalls.png" id="1_ha2nk"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Floor" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor"]
+texture_filter = 1
+position = Vector2(32, 23)
+texture = ExtResource("1_ha2nk")
+region_enabled = true
+region_rect = Rect2(17, 81, 63, 46)
