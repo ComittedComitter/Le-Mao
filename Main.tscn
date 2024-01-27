@@ -4,15 +4,15 @@
 [ext_resource type="PackedScene" uid="uid://clv066jrnuvgb" path="res://GameObjects/floor.tscn" id="1_ifrjw"]
 [ext_resource type="PackedScene" uid="uid://48225o6p4g2e" path="res://GameObjects/cat.tscn" id="3_l6821"]
 
-[node name="Node2D" type="Node2D"]
+[node name="MasterNode" type="Node2D"]
 
 [node name="Floor" parent="." instance=ExtResource("1_ifrjw")]
 
 [node name="Couch" parent="." instance=ExtResource("1_gb065")]
 position = Vector2(653, 406)
 
-[node name="Couch2" parent="." instance=ExtResource("1_gb065")]
-position = Vector2(768, 408)
-
 [node name="Cat" parent="." instance=ExtResource("3_l6821")]
 position = Vector2(457, 435)
+
+[node name="Couch2" parent="." instance=ExtResource("1_gb065")]
+position = Vector2(768, 408)
