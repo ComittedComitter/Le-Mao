@@ -1,9 +1,8 @@
 extends Node
 
 @onready var mic_input = $mic_input
-@onready var recording_player = $recording_player
-@onready var volume_bar = $volume_bar
-@onready var volume_value = $volume_value
+@onready var volume_bar = $margin_volume_bar/volume_bar
+@onready var volume_value = $margin_volume_bar/volume_value
 
 var record_bus_index: int
 var record_effect: AudioEffectRecord
