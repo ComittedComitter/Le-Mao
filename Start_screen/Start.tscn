@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://5h8mhkkpqnk8"]
+[gd_scene load_steps=7 format=3 uid="uid://5h8mhkkpqnk8"]
 
 [ext_resource type="Script" path="res://Start_screen/Start_screen.gd" id="1_76iuy"]
 [ext_resource type="FontFile" uid="uid://iriqom4r5lxp" path="res://Pacifico-Regular.ttf" id="2_3yvvg"]
 [ext_resource type="Script" path="res://Start_screen/L'MAO.gd" id="2_5u3up"]
 [ext_resource type="Script" path="res://Start_screen/Meow.gd" id="4_vicnb"]
+[ext_resource type="Script" path="res://Start_screen/audio-node.gd" id="5_5dqo5"]
+
+[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_2fvfi"]
 
 [node name="Flag" type="Control"]
 layout_mode = 3
@@ -29,3 +32,11 @@ theme_override_fonts/font = ExtResource("2_3yvvg")
 theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
 script = ExtResource("4_vicnb")
+
+[node name="audio_check" type="Node" parent="."]
+script = ExtResource("5_5dqo5")
+
+[node name="mic_input" type="AudioStreamPlayer" parent="audio_check"]
+stream = SubResource("AudioStreamMicrophone_2fvfi")
+autoplay = true
+bus = &"Record"
