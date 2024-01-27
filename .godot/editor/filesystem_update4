@@ -1,6 +1,8 @@
 res://audio_input/default_bus_layout.tres
-res://mic_scene.tscn
-res://audio_levels.gd
-res://volume_code.gd
-res://volume_bar.gd
-res://MarginContainer.gd
+res://Start.tscn
+res://Start_screen.gd
+res://Main.tscn
+res://control.tscn
+res://LineEdit.gd
+res://L'MAO.gd
+res://Meow.gd

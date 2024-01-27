@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="BreakevenStudios"
-run/main_scene="res://mic_scene.tscn"
+run/main_scene="res://Start.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
+<<<<<<<HEADrun/main_scene="res://Start.tscn"
 
 [audio]
 
 buses/default_bus_layout="res://audio_input/default_bus_layout.tres"
-driver/enable_input=true
 
 [rendering]
 

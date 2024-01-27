@@ -1,12 +1,8 @@
 Label
-VBoxContainer
-ProgressBar
-MarginContainer
-Control
+LineEdit
 HBoxContainer
-AudioStreamPlayer
-TextureProgressBar
-TextureRect
-CodeEdit
-Node
+BoxContainer
+Container
+MeshInstance2D
 Sprite2D
+Node

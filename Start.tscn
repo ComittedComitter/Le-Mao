@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://5h8mhkkpqnk8"]
+
+[ext_resource type="Script" path="res://Start_screen.gd" id="1_76iuy"]
+[ext_resource type="FontFile" uid="uid://iriqom4r5lxp" path="res://Pacifico-Regular.ttf" id="2_3yvvg"]
+[ext_resource type="Script" path="res://L'MAO.gd" id="2_5u3up"]
+[ext_resource type="Script" path="res://Meow.gd" id="4_vicnb"]
+
+[node name="Flag" type="Node2D"]
+script = ExtResource("1_76iuy")
+
+[node name="L\'MAO" type="Label" parent="."]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 132.0
+offset_bottom = 125.0
+theme_override_fonts/font = ExtResource("2_3yvvg")
+theme_override_font_sizes/font_size = 70
+horizontal_alignment = 1
+script = ExtResource("2_5u3up")
+
+[node name="Meow" type="Label" parent="."]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 132.0
+offset_bottom = 125.0
+theme_override_fonts/font = ExtResource("2_3yvvg")
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+script = ExtResource("4_vicnb")
