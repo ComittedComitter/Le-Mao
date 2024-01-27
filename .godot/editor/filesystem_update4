@@ -3,3 +3,6 @@ res://GameObjects/floor.tscn
 res://GameObjects/couch.tscn
 res://GameObjects/cat.tscn
 res://Scripts/cat.gd
+res://ChangeFX.tscn
+res://GameObjects/couch.gd
+res://GameObjects/ChangeFX.tscn

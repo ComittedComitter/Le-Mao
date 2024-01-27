@@ -1,17 +1,46 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706352811
-Main.tscn::PackedScene::3610677479048222785::1706352146::0::1::::<><>::uid://do0s1ntqlsfy6::::res://GameObjects/couch.tscn<>uid://clv066jrnuvgb::::res://GameObjects/floor.tscn
-::res://Assets/::1706349182
+::res://::1706356852
+Main.tscn::PackedScene::3610677479048222785::1706355375::0::1::::<><>::uid://do0s1ntqlsfy6::::res://GameObjects/couch.tscn<>uid://clv066jrnuvgb::::res://GameObjects/floor.tscn<>uid://48225o6p4g2e::::res://GameObjects/cat.tscn
+ChangeFX.tscn::PackedScene::5460989765414492263::1706357242::0::1::::<><>::uid://dsc4rxk12aq8t::::res://Assets/Dust/BIG IMPACT SMOKE.png
+::res://Assets/::1706356613
 icon.svg::CompressedTexture2D::2012872210187321084::1706291294::1706349182::1::::<><>::
+::res://Assets/Dust/::1706356654
+BIG IMPACT SMOKE.png::CompressedTexture2D::8428582368061135525::1671357349::1706356654::1::::<><>::
+BIG SMOKE.png::CompressedTexture2D::9182222241268161673::1671357155::1706356654::1::::<><>::
+BigSlashV.png::CompressedTexture2D::2725417797148236932::1672040782::1706356654::1::::<><>::
+Dash1.png::CompressedTexture2D::3723007141416103202::1672040916::1706356654::1::::<><>::
+DASH SMOKE 2.png::CompressedTexture2D::5500161730432504774::1671357440::1706356654::1::::<><>::
+DASH SMOKE.png::CompressedTexture2D::7908255083846001818::1671357408::1706356654::1::::<><>::
+Dashtrail1.png::CompressedTexture2D::4914298321432945186::1672040939::1706356654::1::::<><>::
+EXPLOSION.png::CompressedTexture2D::8744718149455219697::1671357599::1706356654::1::::<><>::
+Hslash1.png::CompressedTexture2D::492070350725689079::1672040676::1706356654::1::::<><>::
+IMPACT 1.png::CompressedTexture2D::8717334387118249726::1671357021::1706356654::1::::<><>::
+IMPACT DUST KICK.png::CompressedTexture2D::4059803049162502338::1671357569::1706356654::1::::<><>::
+ImpactMedium1.png::CompressedTexture2D::8664387119093172762::1672040992::1706356654::1::::<><>::
+MEDIUM SMOKE.png::CompressedTexture2D::8457393909824356913::1671357585::1706356654::1::::<><>::
+PunchImp1.png::CompressedTexture2D::7685339216188233890::1672040825::1706356654::1::::<><>::
+SIDE IMPACT.png::CompressedTexture2D::2775141396514645921::1671357452::1706356654::1::::<><>::
+SIDE PUFF.png::CompressedTexture2D::6882566589526768156::1671357467::1706356654::1::::<><>::
+SIDE SMOKE 1.png::CompressedTexture2D::4712023488432005123::1671357366::1706356654::1::::<><>::
+SIDE SMOKE 2.png::CompressedTexture2D::1263763838605465889::1671357385::1706356654::1::::<><>::
+SMALL IMPACT2.png::CompressedTexture2D::7430380342196659406::1671357326::1706356654::1::::<><>::
+SMALL IMPACT.png::CompressedTexture2D::6126949549170378608::1671357291::1706356654::1::::<><>::
+SMALL SIDE PUFF 2.png::CompressedTexture2D::7202485670943238107::1671357497::1706356654::1::::<><>::
+SMALL SIDE PUFF.png::CompressedTexture2D::3544996122205391644::1671357481::1706356654::1::::<><>::
+SMALL SMOKE 2.png::CompressedTexture2D::2461621787504003736::1671357554::1706356654::1::::<><>::
+SMALL SMOKE.png::CompressedTexture2D::5301010923259327441::1671357536::1706356654::1::::<><>::
+vSlash1.png::CompressedTexture2D::4842485037765088446::1672040448::1706356654::1::::<><>::
+VslashSmall1.png::CompressedTexture2D::2590516284591639809::1672040754::1706356654::1::::<><>::
 ::res://Assets/Top-Down_Retro_Interior/::1706349226
 DoorsAndWindows.png::CompressedTexture2D::1850325626124077387::1668103736::1706349204::1::::<><>::
 FloorsAndWalls.png::CompressedTexture2D::5492265764121828499::1706302992::1706349135::1::::<><>::
 FurnitureState1.png::CompressedTexture2D::5082606283098510608::1668103560::1706349209::1::::<><>::
 FurnitureState2.png::CompressedTexture2D::5303172625566173755::1668103570::1706349215::1::::<><>::
 SmallItems.png::CompressedTexture2D::6936380916372786346::1668103906::1706349226::1::::<><>::
-::res://GameObjects/::1706352801
-cat.gd::GDScript::-1::1706352801::0::1::::<>CharacterBody2D<>::
-cat.tscn::PackedScene::2105290105384495466::1706352775::0::1::::<><>::uid://3xbygfxrr2vo::::res://Assets/icon.svg
-couch.tscn::PackedScene::8194655355271790947::1706352259::0::1::::<><>::uid://chs5qi7w1inv4::::res://Assets/Top-Down_Retro_Interior/FurnitureState2.png
-floor.tscn::PackedScene::5589845507587706353::1706351470::0::1::::<><>::uid://ckiq2x2fv3nnv::::res://Assets/Top-Down_Retro_Interior/FloorsAndWalls.png
-::res://Scripts/::1706352811
+::res://GameObjects/::1706355237
+cat.tscn::PackedScene::2105290105384495466::1706354442::0::1::::<><>::res://Scripts/cat.gd<>uid://3xbygfxrr2vo::::res://Assets/icon.svg
+couch.tscn::PackedScene::8194655355271790947::1706361541::0::1::::<><>::uid://chs5qi7w1inv4::::res://Assets/Top-Down_Retro_Interior/FurnitureState2.png
+floor.tscn::PackedScene::5589845507587706353::1706357249::0::1::::<><>::uid://ckiq2x2fv3nnv::::res://Assets/Top-Down_Retro_Interior/FloorsAndWalls.png
+couch.gd::GDScript::-1::1706361559::0::1::::<>StaticBody2D<>::
+::res://Scripts/::1706353294
+cat.gd::GDScript::-1::1706353294::0::1::::<>CharacterBody2D<>::

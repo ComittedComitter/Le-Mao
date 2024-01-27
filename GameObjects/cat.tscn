@@ -7,6 +7,7 @@
 size = Vector2(129, 129)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+z_index = 1
 scale = Vector2(0.25, 0.25)
 script = ExtResource("1_oqd8u")
 
@@ -15,5 +16,4 @@ position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_efyi7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-z_index = 2
 texture = ExtResource("1_s47p7")
