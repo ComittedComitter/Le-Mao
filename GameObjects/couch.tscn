@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://do0s1ntqlsfy6"]
 
-[ext_resource type="Script" path="res://GameObjects/couch.gd" id="1_7j287"]
+[ext_resource type="Script" path="res://Scripts/couch.gd" id="1_7j287"]
 [ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="1_wrwon"]
 [ext_resource type="Texture2D" uid="uid://ceob1vbjsxme7" path="res://Assets/Top-Down_Retro_Interior/FurnitureState1.png" id="3_ppo87"]
 
