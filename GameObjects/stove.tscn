@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bixdrtsnjxolk"]
+
+[ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="1_g2u8w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_421yo"]
+size = Vector2(30, 20)
+
+[node name="stove" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_g2u8w")
+region_enabled = true
+region_rect = Rect2(65, 192, 30, 43)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 11)
+shape = SubResource("RectangleShape2D_421yo")

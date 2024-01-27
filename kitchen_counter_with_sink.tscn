@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://crl0p3m2gwhle"]
+
+[ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="1_b4yel"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i0wmr"]
+size = Vector2(80, 20)
+
+[node name="kitchen_counter_with_sink" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_b4yel")
+region_enabled = true
+region_rect = Rect2(96, 192, 80, 43)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 11)
+shape = SubResource("RectangleShape2D_i0wmr")
