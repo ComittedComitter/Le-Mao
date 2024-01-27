@@ -1,6 +1,7 @@
 res://audio_input/default_bus_layout.tres
-res://Start_screen/Start.tscn
-res://Start_screen/Start_screen.gd
 res://Main.tscn
 res://control.tscn
+res://Start_screen/Start.tscn
+res://Start_screen/Start_screen.gd
+res://mic_scene.tscn
 res://Start_screen/audio-node.gd
