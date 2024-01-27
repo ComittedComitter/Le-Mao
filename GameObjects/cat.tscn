@@ -308,8 +308,7 @@ shape = SubResource("RectangleShape2D_efyi7")
 
 [node name="Cat_Animation" type="AnimatedSprite2D" parent="."]
 position = Vector2(28, -4)
-scale = Vector2(4, 4)
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_6h1fx")
-animation = &"Fly"
-frame = 3
-frame_progress = 0.271039
+animation = &"Walk"
+frame_progress = 0.411766

@@ -12,12 +12,16 @@ var nearest_obj_distance = 0
 func _ready():
 	# Populate objects_to_check with the nodes we want to consider
 	objects_to_check = get_tree().get_nodes_in_group("my_group")
-	cat_animation.play()
+	cat_animation.play("Idle")
 
 func _physics_process(delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * speed
 	move_and_slide()
+	if direction > 0:9
+		cat_animation.play("Walk")
+	elif direction < 0:
+		cat_animation.play("Walk")
 	# When pressing wreck, check if furniture is nearby
 	if Input.is_action_pressed("wreck_button"): 
 		var nearest_object = find_nearest_object()
