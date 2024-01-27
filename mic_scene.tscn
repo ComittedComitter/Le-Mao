@@ -1,4 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://csfm7j6a66m60"]
+[gd_scene load_steps=5 format=3 uid="uid://csfm7j6a66m60"]
+
+[ext_resource type="Texture2D" uid="uid://bt0t0m7nj7yik" path="res://audio_input/abstract-surface-textures-white-concrete-stone-wall.jpg" id="2_dyhwh"]
+[ext_resource type="Script" path="res://volume_code.gd" id="2_t6ruk"]
+[ext_resource type="Script" path="res://MarginContainer.gd" id="3_a23ks"]
 
 [sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_0anu6"]
 
@@ -10,11 +14,45 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="CodeEdit" type="CodeEdit" parent="."]
-offset_right = 8.0
-offset_bottom = 8.0
+[node name="background" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="record_audio" type="AudioStreamPlayer" parent="CodeEdit"]
+[node name="Abstract-surface-textures-white-concrete-stone-wall" type="Sprite2D" parent="background"]
+position = Vector2(569, 339)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_dyhwh")
+
+[node name="volume_code" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_t6ruk")
+
+[node name="mic_input" type="AudioStreamPlayer" parent="volume_code"]
 stream = SubResource("AudioStreamMicrophone_0anu6")
 autoplay = true
 bus = &"Record"
+
+[node name="recording_player" type="AudioStreamPlayer" parent="volume_code"]
+
+[node name="margin_volume_bar" type="VBoxContainer" parent="volume_code"]
+layout_mode = 2
+script = ExtResource("3_a23ks")
+
+[node name="volume_bar" type="ProgressBar" parent="volume_code/margin_volume_bar"]
+layout_mode = 2
+size_flags_stretch_ratio = 7.85
+min_value = -80.0
+fill_mode = 3
+
+[node name="volume_value" type="Label" parent="volume_code/margin_volume_bar"]
+layout_mode = 2

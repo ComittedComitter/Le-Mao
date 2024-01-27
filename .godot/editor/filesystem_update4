@@ -1,1 +1,6 @@
 res://audio_input/default_bus_layout.tres
+res://mic_scene.tscn
+res://audio_levels.gd
+res://volume_code.gd
+res://volume_bar.gd
+res://MarginContainer.gd

@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91dbefd6-d3f3-46e3-9b71-7398c76a1582" name="Changes" comment="Missing .project file fix">
+    <list default="true" id="91dbefd6-d3f3-46e3-9b71-7398c76a1582" name="Changes" comment="Enabled audio input">
       <change beforePath="$PROJECT_DIR$/.godot/editor/create_recent.Node" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/create_recent.Node" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_update4" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_update4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/mic_scene.tscn-editstate-d81738222bf1bd16610d42edb6a6a074.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/mic_scene.tscn-editstate-d81738222bf1bd16610d42edb6a6a074.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/mic_scene.tscn-folding-d81738222bf1bd16610d42edb6a6a074.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/mic_scene.tscn-folding-d81738222bf1bd16610d42edb6a6a074.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/uid_cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/uid_cache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mic_scene.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/mic_scene.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,14 +25,34 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "git-widget-placeholder": "Microphone-test",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Created mic_scene with audio bus">
+      <option name="closed" value="true" />
+      <created>1706355740333</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706355740333</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Enabled audio input">
+      <option name="closed" value="true" />
+      <created>1706357126993</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706357126993</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Missing .project file fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Missing .project file fix" />
+    <MESSAGE value="Created mic_scene with audio bus" />
+    <MESSAGE value="Enabled audio input" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enabled audio input" />
   </component>
 </project>

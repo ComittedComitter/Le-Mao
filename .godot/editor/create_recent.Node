@@ -1,4 +1,12 @@
-CodeEdit
+Label
+VBoxContainer
+ProgressBar
+MarginContainer
+Control
+HBoxContainer
 AudioStreamPlayer
+TextureProgressBar
+TextureRect
+CodeEdit
 Node
 Sprite2D
