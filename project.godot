@@ -14,6 +14,10 @@ config/name="BreakevenStudios"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="res://audio_input/default_bus_layout.tres"
+
 [rendering]
 
 renderer/rendering_method="mobile"
