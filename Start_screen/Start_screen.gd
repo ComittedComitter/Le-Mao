@@ -25,7 +25,7 @@ func _draw():
 	draw_rect(r3, Color.RED, true)
 	
 func _change_scene():
-	if speech > -20:
+	if speech > -10:
 		get_tree().change_scene_to_file("res://Main.tscn")
 	else: pass
 

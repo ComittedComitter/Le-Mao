@@ -1,9 +1,7 @@
 extends Node
 
 @onready var mic_input = $mic_input
-@onready var recording_player = $recording_player
 @onready var volume_bar = $volume_bar
-@onready var volume_value = $volume_value
 
 var record_bus_index: int
 var record_effect: AudioEffectRecord
@@ -32,8 +30,7 @@ func update_samples_strength() -> float:
 		volume_samples.pop_back()
 
 	var sample_avg = average_array(volume_samples)
-	volume_value.text = '%sdb' % round(linear_to_db(sample_avg))
-	volume_bar.value = round(linear_to_db(sample_avg))
+	#volume_bar.value = round(linear_to_db(sample_avg))
 	return round(linear_to_db(sample_avg))
 
 func average_array(arr: Array) -> float:

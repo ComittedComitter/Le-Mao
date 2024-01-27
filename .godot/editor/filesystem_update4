@@ -5,3 +5,4 @@ res://Start_screen/Start.tscn
 res://Start_screen/Start_screen.gd
 res://mic_scene.tscn
 res://Start_screen/audio-node.gd
+res://MarginContainer.gd

@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://5h8mhkkpqnk8"]
+[gd_scene load_steps=7 format=3 uid="uid://5h8mhkkpqnk8"]
 
 [ext_resource type="Script" path="res://Start_screen/Start_screen.gd" id="1_76iuy"]
 [ext_resource type="FontFile" uid="uid://iriqom4r5lxp" path="res://Pacifico-Regular.ttf" id="2_3yvvg"]
 [ext_resource type="Script" path="res://Start_screen/L'MAO.gd" id="2_5u3up"]
 [ext_resource type="Script" path="res://Start_screen/Meow.gd" id="4_vicnb"]
 [ext_resource type="Script" path="res://Start_screen/audio-node.gd" id="5_5dqo5"]
-[ext_resource type="Script" path="res://MarginContainer.gd" id="6_yut82"]
 
 [sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_2fvfi"]
 
@@ -45,12 +44,8 @@ autoplay = true
 bus = &"Record"
 
 [node name="margin_volume_bar" type="VBoxContainer" parent="audio_check"]
-script = ExtResource("6_yut82")
 
 [node name="volume_bar" type="TextureProgressBar" parent="audio_check/margin_volume_bar"]
 layout_mode = 2
 size_flags_stretch_ratio = 7.85
 min_value = -80.0
-
-[node name="volume_value" type="Label" parent="audio_check/margin_volume_bar"]
-layout_mode = 2
