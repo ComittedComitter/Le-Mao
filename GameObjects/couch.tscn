@@ -12,6 +12,7 @@ z_index = 2
 script = ExtResource("1_7j287")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 2
 scale = Vector2(2, 2)
 texture = ExtResource("1_wrwon")
 region_enabled = true
@@ -23,6 +24,7 @@ shape = SubResource("RectangleShape2D_ntp51")
 
 [node name="Sprite2_wrecked" type="Sprite2D" parent="."]
 visible = false
+z_index = 2
 scale = Vector2(2, 2)
 texture = ExtResource("3_ppo87")
 region_enabled = true

@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="1_ibl05"]
 
 [node name="Carpet" type="Node2D"]
-z_index = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 1

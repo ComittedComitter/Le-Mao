@@ -412,7 +412,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Walk_left",
-"speed": 5.0
+"speed": 20.0
 }]
 
 [node name="LeMao" type="CharacterBody2D"]
@@ -425,7 +425,8 @@ position = Vector2(14.5, -0.5)
 shape = SubResource("RectangleShape2D_efyi7")
 
 [node name="Cat_Animation" type="AnimatedSprite2D" parent="."]
+z_index = 1
 position = Vector2(28, -4)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_6h1fx")
-animation = &"Walk_left"
+animation = &"Idle"

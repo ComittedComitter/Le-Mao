@@ -602,6 +602,7 @@ sources/0 = SubResource("TileSetAtlasSource_v70wn")
 [node name="Floor" type="Node"]
 
 [node name="TileMap" type="TileMap" parent="."]
+z_index = -1
 texture_filter = 1
 tile_set = SubResource("TileSet_by0c2")
 format = 2
