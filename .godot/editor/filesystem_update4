@@ -1,2 +1,5 @@
 res://Main.tscn
 res://GameObjects/floor.tscn
+res://GameObjects/couch.tscn
+res://GameObjects/cat.tscn
+res://Scripts/cat.gd

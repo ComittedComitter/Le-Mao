@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706349226
-Main.tscn::PackedScene::3610677479048222785::1706349135::0::1::::<><>::uid://ckiq2x2fv3nnv::::res://Assets/Top-Down_Retro_Interior/FloorsAndWalls.png
+::res://::1706352811
+Main.tscn::PackedScene::3610677479048222785::1706352146::0::1::::<><>::uid://do0s1ntqlsfy6::::res://GameObjects/couch.tscn<>uid://clv066jrnuvgb::::res://GameObjects/floor.tscn
 ::res://Assets/::1706349182
 icon.svg::CompressedTexture2D::2012872210187321084::1706291294::1706349182::1::::<><>::
 ::res://Assets/Top-Down_Retro_Interior/::1706349226
@@ -9,5 +9,9 @@ FloorsAndWalls.png::CompressedTexture2D::5492265764121828499::1706302992::170634
 FurnitureState1.png::CompressedTexture2D::5082606283098510608::1668103560::1706349209::1::::<><>::
 FurnitureState2.png::CompressedTexture2D::5303172625566173755::1668103570::1706349215::1::::<><>::
 SmallItems.png::CompressedTexture2D::6936380916372786346::1668103906::1706349226::1::::<><>::
-::res://GameObjects/::1706349175
-floor.tscn::PackedScene::5589845507587706353::1706349175::0::1::::<><>::uid://ckiq2x2fv3nnv::::res://Assets/Top-Down_Retro_Interior/FloorsAndWalls.png
+::res://GameObjects/::1706352801
+cat.gd::GDScript::-1::1706352801::0::1::::<>CharacterBody2D<>::
+cat.tscn::PackedScene::2105290105384495466::1706352775::0::1::::<><>::uid://3xbygfxrr2vo::::res://Assets/icon.svg
+couch.tscn::PackedScene::8194655355271790947::1706352259::0::1::::<><>::uid://chs5qi7w1inv4::::res://Assets/Top-Down_Retro_Interior/FurnitureState2.png
+floor.tscn::PackedScene::5589845507587706353::1706351470::0::1::::<><>::uid://ckiq2x2fv3nnv::::res://Assets/Top-Down_Retro_Interior/FloorsAndWalls.png
+::res://Scripts/::1706352811
