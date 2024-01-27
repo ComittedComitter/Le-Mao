@@ -1,2 +1,8 @@
+Label
+LineEdit
+HBoxContainer
+BoxContainer
+Container
+MeshInstance2D
 Sprite2D
 Node
