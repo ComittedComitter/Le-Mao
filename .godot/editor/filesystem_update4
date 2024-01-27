@@ -1,2 +1,5 @@
 res://audio_input/default_bus_layout.tres
-res://mic_record/MicRecord.tscn
+res://Start_screen/Start.tscn
+res://Start_screen/Start_screen.gd
+res://Main.tscn
+res://control.tscn

@@ -5,7 +5,9 @@
 [ext_resource type="Script" path="res://Start_screen/L'MAO.gd" id="2_5u3up"]
 [ext_resource type="Script" path="res://Start_screen/Meow.gd" id="4_vicnb"]
 
-[node name="Flag" type="Node2D"]
+[node name="Flag" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_76iuy")
 
 [node name="L\'MAO" type="Label" parent="."]
