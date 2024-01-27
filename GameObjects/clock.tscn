@@ -1,17 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://b0b3ma28288qk"]
+[gd_scene load_steps=5 format=3 uid="uid://b0b3ma28288qk"]
 
 [ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="1_i41g8"]
+[ext_resource type="Script" path="res://Scripts/clock.gd" id="1_sau1b"]
+[ext_resource type="Texture2D" uid="uid://bq4w0skp37df3" path="res://Assets/FurnitureBrokenState.png" id="3_qlf0g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8d144"]
 size = Vector2(20, 15)
 
-[node name="Clock" type="StaticBody2D"]
+[node name="Clock" type="StaticBody2D" groups=["furniture"]]
 z_index = 2
 scale = Vector2(2, 2)
+script = ExtResource("1_sau1b")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 texture = ExtResource("1_i41g8")
+region_enabled = true
+region_rect = Rect2(70, 112, 21, 46)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+texture = ExtResource("3_qlf0g")
 region_enabled = true
 region_rect = Rect2(70, 112, 21, 46)
 

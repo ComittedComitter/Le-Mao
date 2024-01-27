@@ -5,6 +5,7 @@ const speed = 100.0
 const reach = 60
 
 @onready var cat_animation = $Cat_Animation
+@export var wreck_tscn: PackedScene
 
 var objects_to_check 
 var nearest_obj_distance = 0
@@ -35,6 +36,9 @@ func _physics_process(delta):
 		if nearest_object != null:
 			if nearest_obj_distance < reach:
 				if nearest_object.has_method("wreck"):
+					var wreck_animation = wreck_tscn.instantiate()
+					add_child(wreck_animation)
+					wreck_animation.position = nearest_object.get_position()	
 					nearest_object.wreck()
 		else:
 			print("Nope")

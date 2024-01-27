@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gjhu8"]
 size = Vector2(14, 12)
 
-[node name="Chair_front" type="StaticBody2D"]
+[node name="Chair_front" type="StaticBody2D" groups=["furniture"]]
 z_index = 2
 scale = Vector2(2, 2)
 

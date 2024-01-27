@@ -1,16 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3wqr3o340601"]
+[gd_scene load_steps=5 format=3 uid="uid://b3wqr3o340601"]
 
+[ext_resource type="Script" path="res://Scripts/chair.gd" id="1_i7okw"]
 [ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="1_mfq4a"]
+[ext_resource type="Texture2D" uid="uid://bq4w0skp37df3" path="res://Assets/FurnitureBrokenState.png" id="3_e7lkh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lkmed"]
 size = Vector2(14, 10.5)
 
-[node name="Chair_back" type="StaticBody2D"]
+[node name="Chair_back" type="StaticBody2D" groups=["furniture"]]
 z_index = 2
 scale = Vector2(2, 2)
+script = ExtResource("1_i7okw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 texture = ExtResource("1_mfq4a")
+region_enabled = true
+region_rect = Rect2(160, 10, 16, 21)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture = ExtResource("3_e7lkh")
 region_enabled = true
 region_rect = Rect2(160, 10, 16, 21)
 

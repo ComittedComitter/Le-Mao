@@ -11,3 +11,8 @@ res://GameObjects/ChangeFX.tscn
 res://Scripts/cat.gd
 res://GameObjects/chair_down.tscn
 res://GameObjects/coffee_table.tscn
+res://Scripts/chair.gd
+res://Scripts/carpet.gd
+res://Scripts/table.gd
+res://Scripts/clock.gd
+res://Scripts/ChangeFX.gd

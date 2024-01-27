@@ -17,3 +17,5 @@ region_rect = Rect2(33, 64, 46, 47)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 14.5)
 shape = SubResource("RectangleShape2D_217mn")
+
+[node name="wrecked_bkshelf" type="Sprite2D" parent="."]

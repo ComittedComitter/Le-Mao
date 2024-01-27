@@ -1,15 +1,15 @@
 [gd_scene load_steps=5 format=3 uid="uid://do0s1ntqlsfy6"]
 
-[ext_resource type="Script" path="res://Scripts/couch.gd" id="1_7j287"]
+[ext_resource type="Script" path="res://Scripts/couch.gd" id="1_ih1p0"]
 [ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="1_wrwon"]
-[ext_resource type="Texture2D" uid="uid://ceob1vbjsxme7" path="res://Assets/Top-Down_Retro_Interior/FurnitureState1.png" id="3_ppo87"]
+[ext_resource type="Texture2D" uid="uid://bq4w0skp37df3" path="res://Assets/FurnitureBrokenState.png" id="3_or5vr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ntp51"]
 size = Vector2(95, 37)
 
 [node name="StaticBody2D" type="StaticBody2D" groups=["furniture"]]
 z_index = 2
-script = ExtResource("1_7j287")
+script = ExtResource("1_ih1p0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 2
@@ -26,6 +26,6 @@ shape = SubResource("RectangleShape2D_ntp51")
 visible = false
 z_index = 2
 scale = Vector2(2, 2)
-texture = ExtResource("3_ppo87")
+texture = ExtResource("3_or5vr")
 region_enabled = true
 region_rect = Rect2(88, 160, 49, 32)
