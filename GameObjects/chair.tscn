@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3wqr3o340601"]
+
+[ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="1_mfq4a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lkmed"]
+size = Vector2(14, 10.5)
+
+[node name="Chair_back" type="StaticBody2D"]
+z_index = 2
+scale = Vector2(2, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mfq4a")
+region_enabled = true
+region_rect = Rect2(160, 10, 16, 21)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5.25)
+shape = SubResource("RectangleShape2D_lkmed")

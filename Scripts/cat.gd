@@ -4,28 +4,29 @@ extends CharacterBody2D
 const speed = 300.0
 const reach = 52
 
+@onready var cat_animation = $Cat_Animation
 
 var objects_to_check 
 var nearest_obj_distance = 0
 
 func _ready():
-	# Populate objects_to_check with the nodes you want to consider
-	# For example, you can set it through the editor or populate it in code
+	# Populate objects_to_check with the nodes we want to consider
 	objects_to_check = get_tree().get_nodes_in_group("my_group")
-
+	cat_animation.play()
 
 func _physics_process(delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * speed
 	move_and_slide()
-	if Input.is_action_pressed("wreck_button"):
-	# Find the nearest object and print its name
+	# When pressing wreck, check if furniture is nearby
+	if Input.is_action_pressed("wreck_button"): 
 		var nearest_object = find_nearest_object()
 		if nearest_object != null:
 			if nearest_obj_distance < reach:
-				print("Nearest object:", nearest_object.name)
+				if nearest_object.has_method("wreck"):
+					nearest_object.wreck()
 		else:
-			print("No objects in the group")
+			print("Nope")
 
 
 func find_nearest_object() -> Object:

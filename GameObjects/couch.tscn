@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://do0s1ntqlsfy6"]
+[gd_scene load_steps=5 format=3 uid="uid://do0s1ntqlsfy6"]
 
 [ext_resource type="Script" path="res://GameObjects/couch.gd" id="1_7j287"]
 [ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="1_wrwon"]
+[ext_resource type="Texture2D" uid="uid://ceob1vbjsxme7" path="res://Assets/Top-Down_Retro_Interior/FurnitureState1.png" id="3_ppo87"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ntp51"]
 size = Vector2(95, 37)
@@ -19,3 +20,10 @@ region_rect = Rect2(88, 160, 49, 32)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 12.5)
 shape = SubResource("RectangleShape2D_ntp51")
+
+[node name="Sprite2_wrecked" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(2, 2)
+texture = ExtResource("3_ppo87")
+region_enabled = true
+region_rect = Rect2(88, 160, 49, 32)

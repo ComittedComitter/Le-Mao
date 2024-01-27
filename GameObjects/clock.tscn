@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0b3ma28288qk"]
+
+[ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="1_i41g8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8d144"]
+size = Vector2(20, 15)
+
+[node name="Clock" type="StaticBody2D"]
+z_index = 2
+scale = Vector2(2, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_i41g8")
+region_enabled = true
+region_rect = Rect2(70, 112, 21, 46)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 15.5)
+shape = SubResource("RectangleShape2D_8d144")

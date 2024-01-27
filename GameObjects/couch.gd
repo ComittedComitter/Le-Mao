@@ -1,8 +1,12 @@
 extends StaticBody2D
 
+@onready var sprite_2d = $Sprite2D
+@onready var sprite_2_wrecked = $Sprite2_wrecked
+var wrecked = false
 
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func wreck():
-	pass
+	if !wrecked:
+		sprite_2d.visible = false
+		sprite_2_wrecked.visible = true
+		wrecked = true

@@ -1,6 +1,12 @@
+res://GameObjects/chair.tscn
+res://GameObjects/table.tscn
+res://GameObjects/carpet.tscn
+res://GameObjects/bookshelf.tscn
+res://GameObjects/clock.tscn
 res://Main.tscn
-res://Scripts/cat.gd
 res://GameObjects/floor.tscn
 res://GameObjects/couch.tscn
 res://GameObjects/cat.tscn
 res://GameObjects/ChangeFX.tscn
+res://Scripts/cat.gd
+res://GameObjects/chair_down.tscn
