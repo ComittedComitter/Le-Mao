@@ -10,3 +10,4 @@ res://GameObjects/cat.tscn
 res://GameObjects/ChangeFX.tscn
 res://Scripts/cat.gd
 res://GameObjects/chair_down.tscn
+res://GameObjects/coffee_table.tscn

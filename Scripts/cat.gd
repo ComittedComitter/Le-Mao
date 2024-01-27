@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const speed = 300.0
+const speed = 100.0
 const reach = 52
 
 @onready var cat_animation = $Cat_Animation
@@ -18,10 +18,15 @@ func _physics_process(delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * speed
 	move_and_slide()
-	if direction > 0:9
+	if direction > Vector2(0,0):
+		cat_animation.set_flip_h(true)
 		cat_animation.play("Walk")
-	elif direction < 0:
+	elif direction < Vector2(0,0):
+		cat_animation.set_flip_h(false)
 		cat_animation.play("Walk")
+	else:
+		cat_animation.set_flip_h(false)
+		cat_animation.play("Idle")
 	# When pressing wreck, check if furniture is nearby
 	if Input.is_action_pressed("wreck_button"): 
 		var nearest_object = find_nearest_object()
