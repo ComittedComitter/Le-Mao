@@ -10,9 +10,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Mic_stream" type="Node" parent="."]
+[node name="CodeEdit" type="CodeEdit" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
 
-[node name="record_audio" type="AudioStreamPlayer" parent="Mic_stream"]
+[node name="record_audio" type="AudioStreamPlayer" parent="CodeEdit"]
 stream = SubResource("AudioStreamMicrophone_0anu6")
 autoplay = true
 bus = &"Record"
