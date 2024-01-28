@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const speed = 200.0
+const speed = 400.0
 const reach = 60
 
 @onready var cat_animation = $Cat_Animation
@@ -16,7 +16,7 @@ func _ready():
 	objects_to_check = get_tree().get_nodes_in_group("my_group")
 	cat_animation.play("Idle")
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * speed
 	move_and_slide()
