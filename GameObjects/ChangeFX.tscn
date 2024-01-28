@@ -1,7 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://cj2lx6llwgllv"]
+[gd_scene load_steps=15 format=3 uid="uid://cj2lx6llwgllv"]
 
 [ext_resource type="Texture2D" uid="uid://dsc4rxk12aq8t" path="res://Assets/Dust/BIG IMPACT SMOKE.png" id="1_4rjch"]
-[ext_resource type="Script" path="res://Scripts/ChangeFX.gd" id="2_rouxj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lqglb"]
 atlas = ExtResource("1_4rjch")
@@ -55,6 +54,9 @@ region = Rect2(1936, 0, 176, 61)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_lqglb")
 }, {
 "duration": 1.0,
@@ -89,16 +91,18 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ij8ar")
+}, {
+"duration": 1.0,
+"texture": null
 }],
-"loop": true,
+"loop": false,
 "name": &"poof",
 "speed": 30.0
 }]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+[node name="poof" type="AnimatedSprite2D"]
 z_index = 10
 position = Vector2(0, 24)
 sprite_frames = SubResource("SpriteFrames_vwydv")
 animation = &"poof"
 offset = Vector2(0, -24)
-script = ExtResource("2_rouxj")

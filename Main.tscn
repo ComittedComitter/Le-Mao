@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://brpbliecljjv2"]
+[gd_scene load_steps=14 format=3 uid="uid://brpbliecljjv2"]
 
 [ext_resource type="PackedScene" uid="uid://do0s1ntqlsfy6" path="res://GameObjects/couch.tscn" id="1_gb065"]
 [ext_resource type="PackedScene" uid="uid://clv066jrnuvgb" path="res://GameObjects/floor.tscn" id="1_ifrjw"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dwj5cphbuir7n" path="res://GameObjects/kitchen_counter_with_sink.tscn" id="10_82h8f"]
 [ext_resource type="PackedScene" uid="uid://bixdrtsnjxolk" path="res://GameObjects/stove.tscn" id="11_kshim"]
 [ext_resource type="PackedScene" uid="uid://df542kabhkyu" path="res://GameObjects/lamp.tscn" id="12_27p3y"]
+[ext_resource type="PackedScene" uid="uid://cj2lx6llwgllv" path="res://GameObjects/ChangeFX.tscn" id="13_8pnhq"]
 
 [node name="MasterNode" type="Node2D"]
 
@@ -68,3 +69,6 @@ position = Vector2(221, 600)
 
 [node name="Chair_front3" parent="." instance=ExtResource("9_rrhur")]
 position = Vector2(220, 570)
+
+[node name="poof" parent="." instance=ExtResource("13_8pnhq")]
+unique_name_in_owner = true

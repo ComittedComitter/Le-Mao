@@ -5,7 +5,8 @@ const speed = 200.0
 const reach = 60
 
 @onready var cat_animation = $Cat_Animation
-@onready var poof_animation = %Poof_Animation
+@onready var poof_animation = %poof
+
 
 var objects_to_check 
 var nearest_obj_distance = 0
@@ -36,7 +37,7 @@ func _physics_process(delta):
 		if nearest_object != null:
 			if nearest_obj_distance < reach:
 				if nearest_object.has_method("wreck"):
-					poof_animation.position = nearest_object.get_position()
+					poof_animation.set_position(nearest_object.get_position())
 					poof_animation.visible = true
 					poof_animation.play("poof")
 					nearest_object.wreck()
