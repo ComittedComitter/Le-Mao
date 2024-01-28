@@ -420,7 +420,6 @@ animations = [{
 z_index = 1
 scale = Vector2(0.35, 0.35)
 script = ExtResource("1_oqd8u")
-wreck_tscn = ExtResource("2_ayhvn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(14.5, -0.5)
@@ -434,4 +433,7 @@ sprite_frames = SubResource("SpriteFrames_6h1fx")
 animation = &"Idle"
 
 [node name="Poof_Animation" parent="." instance=ExtResource("2_ayhvn")]
+unique_name_in_owner = true
+visible = false
+autoplay = "poof"
 script = null

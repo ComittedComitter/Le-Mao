@@ -5,7 +5,7 @@ const speed = 100.0
 const reach = 60
 
 @onready var cat_animation = $Cat_Animation
-@export var wreck_tscn: PackedScene
+@onready var poof_animation = %Poof_Animation
 
 var objects_to_check 
 var nearest_obj_distance = 0
@@ -31,14 +31,14 @@ func _physics_process(delta):
 		cat_animation.set_scale(Vector2(2,2))
 		cat_animation.play("Idle")
 	# When pressing wreck, check if furniture is nearby
-	if Input.is_action_pressed("wreck_button"): 
+	if Input.is_action_just_pressed("wreck_button"): 
 		var nearest_object = find_nearest_object()
 		if nearest_object != null:
 			if nearest_obj_distance < reach:
 				if nearest_object.has_method("wreck"):
-					var wreck_animation = wreck_tscn.instantiate()
-					add_child(wreck_animation)
-					wreck_animation.position = nearest_object.get_position()	
+					poof_animation.position = nearest_object.get_position()
+					poof_animation.visible = true
+					poof_animation.play("poof")
 					nearest_object.wreck()
 		else:
 			print("Nope")
@@ -60,3 +60,8 @@ func find_nearest_object() -> Object:
 
 	return nearest_object
 
+
+
+func _on_poof_animation_animation_finished():
+	print("poof")
+	poof_animation.visible = false

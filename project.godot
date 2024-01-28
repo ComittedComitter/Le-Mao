@@ -15,6 +15,11 @@ run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://Assets/icon.svg"
 
+[display]
+
+window/size/viewport_width=3840
+window/size/viewport_height=1080
+
 [input]
 
 left={
