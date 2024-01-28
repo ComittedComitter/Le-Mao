@@ -12,3 +12,6 @@ res://GameObjects/chair_down.tscn
 res://GameObjects/coffee_table.tscn
 res://Scripts/cat.gd
 res://Scripts/ChangeFX.gd
+res://GameObjects/mr_man.tscn
+res://GameObjects/mr_man.gd
+res://the_game(youlost).tscn
