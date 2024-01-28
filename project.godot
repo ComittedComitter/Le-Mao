@@ -25,6 +25,7 @@ driver/enable_input=true
 
 window/size/viewport_width=3840
 window/size/viewport_height=1080
+window/subwindows/embed_subwindows=false
 
 [input]
 

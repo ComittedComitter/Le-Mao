@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://evtiwtsfvyvo"]
+
+[ext_resource type="PackedScene" uid="uid://brpbliecljjv2" path="res://Main.tscn" id="1_3exvq"]
+
+[node name="TheGame(youlost)" type="Node2D"]
+
+[node name="Window" type="Window" parent="."]
+size = Vector2i(1080, 1920)
+
+[node name="MasterNode" parent="Window" instance=ExtResource("1_3exvq")]
+
+[node name="Window2" type="Window" parent="."]
+size = Vector2i(1080, 1920)
+
+[node name="MasterNode" parent="Window2" instance=ExtResource("1_3exvq")]
