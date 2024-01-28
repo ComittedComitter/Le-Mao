@@ -8,10 +8,11 @@ size = Vector2(80, 20)
 [node name="kitchen_counter_with_sink" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -22)
 texture = ExtResource("1_b4yel")
 region_enabled = true
 region_rect = Rect2(96, 192, 80, 43)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 11)
+position = Vector2(0, -10)
 shape = SubResource("RectangleShape2D_i0wmr")

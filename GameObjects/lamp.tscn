@@ -8,10 +8,11 @@ size = Vector2(4, 20)
 [node name="lamp" type="StaticBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 11)
+position = Vector2(0, -12)
 shape = SubResource("RectangleShape2D_i2bcb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -23)
 texture = ExtResource("1_fuyy3")
 region_enabled = true
 region_rect = Rect2(97, 112, 15, 46)

@@ -1,3 +1,5 @@
+res://GameObjects/kitchen_counter_with_sink.tscn
+res://GameObjects/stove.tscn
 res://Main.tscn
 res://GameObjects/floor.tscn
 res://GameObjects/couch.tscn
@@ -10,8 +12,5 @@ res://GameObjects/table.tscn
 res://GameObjects/chair.tscn
 res://GameObjects/chair_down.tscn
 res://GameObjects/coffee_table.tscn
+res://GameObjects/lamp.tscn
 res://Scripts/cat.gd
-res://Scripts/ChangeFX.gd
-res://GameObjects/mr_man.tscn
-res://GameObjects/mr_man.gd
-res://the_game(youlost).tscn
