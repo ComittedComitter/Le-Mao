@@ -20,9 +20,6 @@
 
 [node name="Floor" parent="." instance=ExtResource("1_ifrjw")]
 
-[node name="Couch" parent="." instance=ExtResource("1_gb065")]
-position = Vector2(1281, 674)
-
 [node name="Cat" parent="." instance=ExtResource("3_l6821")]
 position = Vector2(458, 436)
 
@@ -152,3 +149,17 @@ position = Vector2(502, -240)
 
 [node name="Chair_back4" parent="." instance=ExtResource("8_smmyi")]
 position = Vector2(538, -240)
+
+[node name="(a)mirror8" parent="." instance=ExtResource("14_4bx24")]
+position = Vector2(139, -553)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("1_gb065")]
+position = Vector2(1292, 670)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -560.0
+offset_top = 76.0
+offset_right = -343.0
+offset_bottom = 125.0
+text = "This is where I'd put a toilet. 
+IF I HAD ONE"
