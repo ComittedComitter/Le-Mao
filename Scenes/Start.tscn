@@ -1,17 +1,17 @@
 [gd_scene load_steps=7 format=3 uid="uid://bb3xmrwjlstin"]
 
-[ext_resource type="Script" path="res://Start_screen/Start_screen.gd" id="1_k31nk"]
-[ext_resource type="FontFile" path="res://Pacifico-Regular.ttf" id="2_d2e33"]
-[ext_resource type="Script" path="res://Start_screen/L'MAO.gd" id="3_dxpk8"]
-[ext_resource type="Script" path="res://Start_screen/Meow.gd" id="4_uabob"]
-[ext_resource type="Script" path="res://Start_screen/audio-node.gd" id="5_fc7e2"]
+[ext_resource type="Script" path="res://Scripts/start.gd" id="1_bhnc3"]
+[ext_resource type="FontFile" uid="uid://c70k7fc1l1b43" path="res://Pacifico-Regular.ttf" id="2_d2e33"]
+[ext_resource type="Script" path="res://Scripts/L'MAO.gd" id="3_o5lhm"]
+[ext_resource type="Script" path="res://Scripts/Meow.gd" id="4_uvvr7"]
+[ext_resource type="Script" path="res://Scripts/audio.gd" id="5_2116i"]
 
 [sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_2fvfi"]
 
 [node name="Flag" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_k31nk")
+script = ExtResource("1_bhnc3")
 
 [node name="L\'MAO" type="Label" parent="."]
 layout_mode = 0
@@ -22,7 +22,7 @@ offset_bottom = 125.0
 theme_override_fonts/font = ExtResource("2_d2e33")
 theme_override_font_sizes/font_size = 70
 horizontal_alignment = 1
-script = ExtResource("3_dxpk8")
+script = ExtResource("3_o5lhm")
 
 [node name="Meow" type="Label" parent="."]
 layout_mode = 0
@@ -33,10 +33,10 @@ offset_bottom = 125.0
 theme_override_fonts/font = ExtResource("2_d2e33")
 theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
-script = ExtResource("4_uabob")
+script = ExtResource("4_uvvr7")
 
 [node name="audio_check" type="Node" parent="."]
-script = ExtResource("5_fc7e2")
+script = ExtResource("5_2116i")
 
 [node name="mic_input" type="AudioStreamPlayer" parent="audio_check"]
 stream = SubResource("AudioStreamMicrophone_2fvfi")
