@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://daxjdy6dayj24"]
+
+[ext_resource type="Script" path="res://StaticBody2D.gd" id="1_a0ub7"]
+[ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="2_xlan6"]
+[ext_resource type="Texture2D" uid="uid://bq4w0skp37df3" path="res://Assets/FurnitureBrokenState.png" id="3_f36r8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qmr7l"]
+size = Vector2(2.5, 20)
+
+[node name="Lounge_table" type="StaticBody2D" groups=["furniture"]]
+z_index = 2
+script = ExtResource("1_a0ub7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+scale = Vector2(2, 2)
+texture = ExtResource("2_xlan6")
+region_enabled = true
+region_rect = Rect2(84, 44, 24, 19)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+scale = Vector2(2, 2)
+texture = ExtResource("3_f36r8")
+region_enabled = true
+region_rect = Rect2(84, 44, 24, 19)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 2
+position = Vector2(-17, 8)
+shape = SubResource("RectangleShape2D_qmr7l")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+z_index = 2
+position = Vector2(17, 8)
+shape = SubResource("RectangleShape2D_qmr7l")

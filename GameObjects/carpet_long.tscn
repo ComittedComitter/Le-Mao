@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://nlxa4rxwp7la"]
+
+[ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="1_eefa2"]
+[ext_resource type="Script" path="res://Scripts/carpet_long.gd" id="1_qnd00"]
+[ext_resource type="Texture2D" uid="uid://bq4w0skp37df3" path="res://Assets/FurnitureBrokenState.png" id="2_ixqqm"]
+
+[node name="Node2D" type="Node2D" groups=["furniture"]]
+scale = Vector2(2, 2)
+script = ExtResource("1_qnd00")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("1_eefa2")
+region_enabled = true
+region_rect = Rect2(168, 64, 32, 48)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+texture = ExtResource("2_ixqqm")
+region_enabled = true
+region_rect = Rect2(168, 64, 32, 48)

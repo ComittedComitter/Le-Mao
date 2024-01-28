@@ -1,12 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://kkowkjco462h"]
+[gd_scene load_steps=4 format=3 uid="uid://kkowkjco462h"]
 
+[ext_resource type="Script" path="res://Scripts/coffee_table.gd" id="1_dclo2"]
 [ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="1_qwvsx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_21u76"]
 size = Vector2(4, 9)
 
 [node name="coffee_table" type="StaticBody2D" groups=["furniture"]]
+z_index = 2
 position = Vector2(0, -12)
+script = ExtResource("1_dclo2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_qwvsx")

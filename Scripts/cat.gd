@@ -1,7 +1,6 @@
 extends CharacterBody2D
 
-
-const speed = 400.0
+const speed = 100.0
 const reach = 60
 
 @onready var cat_animation = $Cat_Animation
@@ -12,8 +11,6 @@ var objects_to_check
 var nearest_obj_distance = 0
 
 func _ready():
-	# Populate objects_to_check with the nodes we want to consider
-	objects_to_check = get_tree().get_nodes_in_group("my_group")
 	cat_animation.play("Idle")
 
 func _physics_process(_delta):
@@ -47,7 +44,7 @@ func _physics_process(_delta):
 
 func find_nearest_object() -> Object:
 	objects_to_check = get_tree().get_nodes_in_group("furniture")
-	var nearest_distance = 9999999
+	var nearest_distance = 999999
 	var nearest_object: Object = null
 
 	for obj in objects_to_check:

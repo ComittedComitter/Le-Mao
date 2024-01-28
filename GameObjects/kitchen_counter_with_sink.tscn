@@ -1,15 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwj5cphbuir7n"]
+[gd_scene load_steps=5 format=3 uid="uid://dwj5cphbuir7n"]
 
+[ext_resource type="Script" path="res://Scripts/kitchen_counter_with_sink.gd" id="1_4ywyd"]
 [ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="1_b4yel"]
+[ext_resource type="Texture2D" uid="uid://bq4w0skp37df3" path="res://Assets/FurnitureBrokenState.png" id="3_1culj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i0wmr"]
 size = Vector2(80, 20)
 
 [node name="kitchen_counter_with_sink" type="StaticBody2D"]
+script = ExtResource("1_4ywyd")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -22)
 texture = ExtResource("1_b4yel")
+region_enabled = true
+region_rect = Rect2(96, 192, 80, 43)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, -22)
+texture = ExtResource("3_1culj")
 region_enabled = true
 region_rect = Rect2(96, 192, 80, 43)
 

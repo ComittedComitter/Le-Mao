@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://yralivd2wbah"]
+
+[ext_resource type="Script" path="res://Scripts/bookshelf_side.gd" id="1_n37uu"]
+[ext_resource type="Texture2D" uid="uid://chs5qi7w1inv4" path="res://Assets/Top-Down_Retro_Interior/FurnitureState2.png" id="2_5wmjr"]
+[ext_resource type="Texture2D" uid="uid://bq4w0skp37df3" path="res://Assets/FurnitureBrokenState.png" id="3_qe5vq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mroeh"]
+size = Vector2(11.5, 47.5)
+
+[node name="Bookshelf_side" type="StaticBody2D" groups=["furniture"]]
+scale = Vector2(2, 2)
+script = ExtResource("1_n37uu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_5wmjr")
+region_enabled = true
+region_rect = Rect2(80, 64, 12, 48)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("3_qe5vq")
+region_enabled = true
+region_rect = Rect2(80, 64, 12, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.25)
+shape = SubResource("RectangleShape2D_mroeh")

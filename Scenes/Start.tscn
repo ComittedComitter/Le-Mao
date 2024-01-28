@@ -41,7 +41,6 @@ script = ExtResource("5_2116i")
 [node name="mic_input" type="AudioStreamPlayer" parent="audio_check"]
 stream = SubResource("AudioStreamMicrophone_2fvfi")
 autoplay = true
-bus = &"Record"
 
 [node name="margin_volume_bar" type="VBoxContainer" parent="audio_check"]
 

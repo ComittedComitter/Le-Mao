@@ -1,6 +1,6 @@
 [gd_scene load_steps=44 format=3 uid="uid://dk8su55nunvm0"]
 
-[ext_resource type="Script" path="res://GameObjects/mr_man.gd" id="1_bafpj"]
+[ext_resource type="Script" path="res://Scripts/mr_man.gd" id="1_bafpj"]
 [ext_resource type="Texture2D" uid="uid://gmsqldhh5ha1" path="res://Assets/Man/mayor_walk_back_strip8.png" id="1_x28h6"]
 [ext_resource type="Texture2D" uid="uid://co3kueppucsb6" path="res://Assets/Man/mayor_walk_forward_strip8.png" id="2_v04h3"]
 [ext_resource type="Texture2D" uid="uid://qxckw7hqwtve" path="res://Assets/Man/mayor_idle_strip4.png" id="3_dqwx1"]

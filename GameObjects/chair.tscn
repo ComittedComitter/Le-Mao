@@ -19,6 +19,7 @@ region_enabled = true
 region_rect = Rect2(160, 10, 16, 21)
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
 texture = ExtResource("3_e7lkh")
 region_enabled = true
 region_rect = Rect2(160, 10, 16, 21)

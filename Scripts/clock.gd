@@ -11,3 +11,4 @@ func wreck():
 		sprite_2d.visible = false
 		sprite_2d_2.visible = true
 		wrecked = true
+		remove_from_group("furniture")

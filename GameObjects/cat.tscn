@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://c7oja2gqfokwd" path="res://Assets/idle.png" id="3_dljy6"]
 [ext_resource type="Texture2D" uid="uid://bfil2aqefp3w5" path="res://Assets/cat-walking-hatside.png" id="5_0mhsx"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_efyi7"]
-size = Vector2(65, 61)
+[sub_resource type="CircleShape2D" id="CircleShape2D_puwda"]
+radius = 31.2183
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6xibk"]
 atlas = ExtResource("2_esua4")
@@ -422,11 +422,11 @@ script = ExtResource("1_oqd8u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(14.5, -0.5)
-shape = SubResource("RectangleShape2D_efyi7")
+shape = SubResource("CircleShape2D_puwda")
 
 [node name="Cat_Animation" type="AnimatedSprite2D" parent="."]
 z_index = 1
 position = Vector2(28, -4)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_6h1fx")
-animation = &"Idle"
+animation = &"Walk"
