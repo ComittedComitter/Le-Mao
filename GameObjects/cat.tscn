@@ -435,5 +435,6 @@ animation = &"Idle"
 [node name="Poof_Animation" parent="." instance=ExtResource("2_ayhvn")]
 unique_name_in_owner = true
 visible = false
-autoplay = "poof"
 script = null
+
+[connection signal="animation_finished" from="Poof_Animation" to="." method="_on_poof_animation_animation_finished"]

@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://brpbliecljjv2"]
+[gd_scene load_steps=11 format=3 uid="uid://brpbliecljjv2"]
 
+[ext_resource type="Script" path="res://Main.gd" id="1_3vqf8"]
 [ext_resource type="PackedScene" uid="uid://do0s1ntqlsfy6" path="res://GameObjects/couch.tscn" id="1_gb065"]
 [ext_resource type="PackedScene" uid="uid://clv066jrnuvgb" path="res://GameObjects/floor.tscn" id="1_ifrjw"]
 [ext_resource type="PackedScene" uid="uid://48225o6p4g2e" path="res://GameObjects/cat.tscn" id="3_l6821"]
@@ -11,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://ech6h8wohuge" path="res://GameObjects/chair_down.tscn" id="9_rrhur"]
 
 [node name="MasterNode" type="Node2D"]
+script = ExtResource("1_3vqf8")
 
 [node name="Floor" parent="." instance=ExtResource("1_ifrjw")]
 
