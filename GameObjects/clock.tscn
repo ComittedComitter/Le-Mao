@@ -9,23 +9,23 @@ size = Vector2(20, 15)
 
 [node name="Clock" type="StaticBody2D" groups=["furniture"]]
 z_index = 2
-position = Vector2(0, -46)
 scale = Vector2(2, 2)
 script = ExtResource("1_sau1b")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
+position = Vector2(0, -23)
 texture = ExtResource("1_i41g8")
 region_enabled = true
 region_rect = Rect2(70, 112, 21, 46)
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-visible = false
 texture_filter = 1
+position = Vector2(0, -23)
 texture = ExtResource("3_qlf0g")
 region_enabled = true
 region_rect = Rect2(70, 112, 21, 46)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 15.5)
+position = Vector2(0, -7.5)
 shape = SubResource("RectangleShape2D_8d144")

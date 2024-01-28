@@ -5,10 +5,15 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_21u76"]
 size = Vector2(4, 9)
 
-[node name="coffee_table" type="StaticBody2D"]
+[node name="coffee_table" type="StaticBody2D" groups=["furniture"]]
 position = Vector2(0, -12)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_qwvsx")
+region_enabled = true
+region_rect = Rect2(176, 2, 16, 24)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
 texture = ExtResource("1_qwvsx")
 region_enabled = true
 region_rect = Rect2(176, 2, 16, 24)
