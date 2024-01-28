@@ -142,13 +142,13 @@ position = Vector2(511, -307)
 position = Vector2(539, -307)
 
 [node name="Chair_back" parent="." instance=ExtResource("8_smmyi")]
-position = Vector2(428, -196)
+position = Vector2(428, -240)
 
 [node name="Chair_back2" parent="." instance=ExtResource("8_smmyi")]
-position = Vector2(464, -196)
+position = Vector2(464, -240)
 
 [node name="Chair_back3" parent="." instance=ExtResource("8_smmyi")]
-position = Vector2(502, -196)
+position = Vector2(502, -240)
 
 [node name="Chair_back4" parent="." instance=ExtResource("8_smmyi")]
-position = Vector2(538, -196)
+position = Vector2(538, -240)
