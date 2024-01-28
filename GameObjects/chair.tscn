@@ -9,11 +9,11 @@ size = Vector2(14, 10.5)
 
 [node name="Chair_back" type="StaticBody2D" groups=["furniture"]]
 z_index = 2
+position = Vector2(0, -21)
 scale = Vector2(2, 2)
 script = ExtResource("1_i7okw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
 texture = ExtResource("1_mfq4a")
 region_enabled = true
 region_rect = Rect2(160, 10, 16, 21)

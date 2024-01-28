@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const speed = 100.0
+const speed = 200.0
 const reach = 60
 
 @onready var cat_animation = $Cat_Animation

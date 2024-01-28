@@ -9,6 +9,7 @@ size = Vector2(3, 22.5)
 
 [node name="Table" type="StaticBody2D" groups=["furniture"]]
 z_index = 2
+position = Vector2(0, -30)
 scale = Vector2(2, 2)
 script = ExtResource("1_1kqpb")
 

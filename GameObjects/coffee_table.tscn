@@ -6,6 +6,7 @@
 size = Vector2(4, 9)
 
 [node name="coffee_table" type="StaticBody2D"]
+position = Vector2(0, -12)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_qwvsx")
